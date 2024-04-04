@@ -2,13 +2,13 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy import sparse
 
-# Sample music data
-music_data = {
-    'user_id': [1, 1, 1, 2, 2],
-    'song_id': [1, 2, 3, 2, 3],
-    'rating': [5, 4, 3, 4, 2],
+# Music data
+pop_music_data = {
+    'song_id': [1, 2, 3, 4, 5],
+    'song_title': ['Shape of You', 'Uptown Funk', 'Closer', 'Havana', 'Despacito'],
+    'artist': ['Ed Sheeran', 'Mark Ronson ft. Bruno Mars', 'The Chainsmokers ft. Halsey', 'Camila Cabello ft. Young Thug', 'Luis Fonsi ft. Daddy Yankee'],
+    'year': [2017, 2014, 2016, 2017, 2017]
 }
-
 # Create a DataFrame
 df = pd.DataFrame(music_data)
 
